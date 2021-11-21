@@ -6,7 +6,8 @@ const User = mongoose.model("User", {
   token: String,
   hash: String,
   salt: String,
-  favoris: [{ type: mongoose.Schema.Types.Mixed, default: {} }],
+  favoris_characters: [{ type: mongoose.Schema.Types.Mixed, default: {} }],
+  favoris_comics: [{ type: mongoose.Schema.Types.Mixed, default: {} }],
 });
 
 module.exports = User;
