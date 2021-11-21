@@ -8,7 +8,6 @@ const encBase64 = require("crypto-js/enc-base64");
 const uid2 = require("uid2");
 const User = require("./models/User");
 const formidableMiddleware = require("express-formidable");
-const isAuthenticated = require("./middlewares/isAuthenticated");
 
 const app = express();
 app.use(cors());
